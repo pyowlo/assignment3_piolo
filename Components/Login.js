@@ -21,10 +21,10 @@ const Login = ({ onSwitch, onRegister }) => (
     <Button mode="contained" style={styles.button} onPress={() => {}}>
       Login
     </Button>
-    <Button mode="text" onPress={onSwitch}>
+    <Button mode="text" onPress={onSwitch}textColor="#FFF"> 
       Forgot Password?
     </Button>
-    <Button mode="text" onPress={onRegister}>
+    <Button mode="text" onPress={onRegister}textColor="#FFF">
       Sign Up
     </Button>
   </View>
@@ -53,7 +53,10 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     width: 180, 
     alignSelf: 'center',
+    backgroundColor: '#000000',
   },
+  recoverybutton: {color: 'white',}
+  
 });
 
 export default Login;

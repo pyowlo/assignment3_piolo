@@ -10,10 +10,10 @@ const Recovery = ({ onSwitch }) => (
       <Text variant="headlineMedium" style={styles.recoveryText}>Trouble logging in?</Text>
     </View>
     <TextInput label="Username, or Email" mode="outlined" style={styles.input} />
-    <Button mode="contained" style={styles.button} onPress={() => {}}>
+    <Button mode="contained" style={styles.button} onPress={() => {}}textColor="#FFF">
       Send Recovery Link
     </Button>
-    <Button mode="text" onPress={onSwitch}>
+    <Button mode="text" onPress={onSwitch}textColor="#FFF">
       Back to Login
     </Button>
   </View>
@@ -26,22 +26,23 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   header: {
-    alignItems: 'center', // Center the text
+    alignItems: 'center',
     marginBottom: 20,
   },
   recoveryText: {
-    fontWeight: 'bold', // Make the text bold
+    fontWeight: 'bold',
     color: 'white',
   },
   input: {
     marginBottom: 16,
-    width: '90%', // Set width to 80% of the container (1cm less on both sides)
-    alignSelf: 'center', // Center the input boxes
+    width: '90%',
+    alignSelf: 'center',
   },
   button: {
     marginBottom: 16,
-    width: 200, // Set width to 60 pixels
-    alignSelf: 'center', // Center the button
+    width: 200,
+    alignSelf: 'center',
+    backgroundColor: '#000000',
   },
 });
 
